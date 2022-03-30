@@ -1,3 +1,13 @@
+# How to build 
+## prepare
+make sure install Android NDK and [xmake](https://github.com/xmake-io/xmake/)
+## build 
+```
+cd <your project dir>
+xmake f -m release -p android --android_sdk=/home/xxx/Android/Sdk --ndk=/home/xxx/Android/Sdk/ndk/24.0.7856742 -a armeabi-v7a --ndk_sdkver=28
+xmake -j4
+```
+
 README for lmbench android version.
 
 To run lmbench on target, build system with lmbench tool and
